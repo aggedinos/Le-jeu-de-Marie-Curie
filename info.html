@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Le jeu de Marie Curie</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .info-page-card {
+            text-align: left;
+            padding: 40px;
+        }
+
+        .info-page-card h2 {
+            font-family: 'Space Mono', monospace;
+            color: var(--accent-1);
+            margin-bottom: 20px;
+        }
+
+        .info-page-card p {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted var(--text-muted);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-1);
+            border-bottom-color: var(--accent-1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="card info-page-card" style="width: 100%; max-width: 800px;">
+        <div class="content">
+
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+            </div>
+
+            <!-- ENGLISH CONTENT -->
+            <div id="content-en" class="lang-content active">
+                <h2>Le jeu de Marie Curie</h2>
+
+                <div class="info-section">
+                    <h3>Personal Background</h3>
+                    <ul>
+                        <li><strong>Real Name:</strong> Her birth name was Maria Sklodowska.</li>
+                        <li><strong>Birthplace:</strong> She was born in Poland on November 7, 1867.</li>
+                        <li><strong>Education:</strong> In her youth, she attended the "Flying University," a secret,
+                            illegal educational institution in Poland that accepted women.</li>
+                        <li><strong>Family:</strong> She married French physicist Pierre Curie and they had two
+                            daughters.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Scientific Discoveries</h3>
+                    <ul>
+                        <li><strong>Key Field:</strong> She is famous worldwide for the discovery of radioactivity.</li>
+                        <li><strong>Terminology:</strong> Marie Curie herself introduced the scientific term
+                            "radioactivity".</li>
+                        <li><strong>New Elements:</strong> She and her husband discovered two chemical elements: Radium
+                            and Polonium.</li>
+                        <li><strong>Polonium:</strong> This element was named in honor of her homeland, Poland.</li>
+                        <li><strong>Radium Source:</strong> She studied Pitchblende, a uranium-rich mineral, to isolate
+                            radium.</li>
+                        <li><strong>Radioactivity Levels:</strong> Polonium is vastly more radioactive and toxic than
+                            radium.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Nobel Prizes & Awards</h3>
+                    <ul>
+                        <li><strong>First Nobel (1903):</strong> Won the Nobel Prize in Physics for research on
+                            radiation.</li>
+                        <li><strong>Shared Honor:</strong> She shared her first Nobel with her husband Pierre Curie and
+                            Henri Becquerel.</li>
+                        <li><strong>Second Nobel (1911):</strong> Won the Nobel Prize in Chemistry for discovering
+                            radium and polonium.</li>
+                        <li><strong>Unique Record:</strong> She is the only woman to have won Nobel Prizes in two
+                            different scientific fields (Physics and Chemistry).</li>
+                        <li><strong>First Woman:</strong> She was the first woman in history to win a Nobel Prize.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Legacy & Service</h3>
+                    <ul>
+                        <li><strong>World War I Work:</strong> She created mobile radiology vehicles known as "Petites
+                            Curies" to help doctors locate bullets in wounded soldiers.</li>
+                        <li><strong>Sorbonne:</strong> She became the first female professor in the history of the
+                            Sorbonne University, succeeding her husband.</li>
+                        <li><strong>Patents:</strong> She refused to patent the radium production method, believing
+                            scientific knowledge belongs to humanity.</li>
+                        <li><strong>Measurement Unit:</strong> The "Curie" (Ci) is a unit of measurement for
+                            radioactivity named after her.</li>
+                        <li><strong>Final Honor:</strong> In 1995, her remains were moved to the Paris Panthéon, making
+                            her the first woman buried there for her own achievements.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FRENCH CONTENT -->
+            <div id="content-fr" class="lang-content">
+                <h2>Le jeu de Marie Curie</h2>
+
+                <div class="info-section">
+                    <h3>Contexte Personnel</h3>
+                    <ul>
+                        <li><strong>Vrai Nom :</strong> Son nom de naissance était Maria Sklodowska.</li>
+                        <li><strong>Lieu de naissance :</strong> Elle est née en Pologne le 7 novembre 1867.</li>
+                        <li><strong>Éducation :</strong> Dans sa jeunesse, elle a fréquenté "l'Université Volante", une
+                            institution éducative secrète et illégale en Pologne qui acceptait les femmes.</li>
+                        <li><strong>Famille :</strong> Elle a épousé le physicien français Pierre Curie et ils ont eu
+                            deux filles.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Découvertes Scientifiques</h3>
+                    <ul>
+                        <li><strong>Domaine Clé :</strong> Elle est mondialement célèbre pour la découverte de la
+                            radioactivité.</li>
+                        <li><strong>Terminologie :</strong> Marie Curie elle-même a introduit le terme scientifique
+                            "radioactivité".</li>
+                        <li><strong>Nouveaux Éléments :</strong> Elle et son mari ont découvert deux éléments chimiques
+                            : le Radium et le Polonium.</li>
+                        <li><strong>Polonium :</strong> Cet élément a été nommé en l'honneur de sa patrie, la Pologne.
+                        </li>
+                        <li><strong>Source de Radium :</strong> Elle a étudié la pechblende, un minéral riche en
+                            uranium, pour isoler le radium.</li>
+                        <li><strong>Niveaux de Radioactivité :</strong> Le polonium est infiniment plus radioactif et
+                            toxique que le radium.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Prix Nobel & Récompenses</h3>
+                    <ul>
+                        <li><strong>Premier Nobel (1903) :</strong> A remporté le prix Nobel de physique pour ses
+                            recherches sur les rayonnements.</li>
+                        <li><strong>Honneur Partagé :</strong> Elle a partagé son premier Nobel avec son mari Pierre
+                            Curie et Henri Becquerel.</li>
+                        <li><strong>Deuxième Nobel (1911) :</strong> A remporté le prix Nobel de chimie pour la
+                            découverte du radium et du polonium.</li>
+                        <li><strong>Record Unique :</strong> Elle est la seule femme à avoir remporté des prix Nobel
+                            dans deux domaines scientifiques différents (Physique et Chimie).</li>
+                        <li><strong>Première Femme :</strong> Elle a été la première femme de l'histoire à remporter un
+                            prix Nobel.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Héritage & Service</h3>
+                    <ul>
+                        <li><strong>Travail pendant la Première Guerre Mondiale :</strong> Elle a créé des véhicules de
+                            radiologie mobiles connus sous le nom de "Petites Curies" pour aider les médecins à
+                            localiser les balles chez les soldats blessés.</li>
+                        <li><strong>Sorbonne :</strong> Elle est devenue la première femme professeur dans l'histoire de
+                            l'Université de la Sorbonne, succédant à son mari.</li>
+                        <li><strong>Brevets :</strong> Elle a refusé de breveter la méthode de production du radium,
+                            estimant que la connaissance scientifique appartient à l'humanité.</li>
+                        <li><strong>Unité de Mesure :</strong> Le "Curie" (Ci) est une unité de mesure de la
+                            radioactivité nommée en son honneur.</li>
+                        <li><strong>Honneur Final :</strong> En 1995, ses restes ont été transférés au Panthéon de
+                            Paris, faisant d'elle la première femme à y être inhumée pour ses propres mérites.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-link">← Back to Download</a>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update content blocks
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Return back link translation
+            const backLink = document.querySelector('.back-link');
+            if (lang === 'fr') {
+                backLink.textContent = '← Retour au téléchargement';
+            } else {
+                backLink.textContent = '← Back to Download';
+            }
+        }
+    </script>
+</body>
+
+</html>
